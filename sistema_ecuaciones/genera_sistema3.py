@@ -1,5 +1,5 @@
 """
-genera un sistema (I-A)x = b donde Aij in <0,1>  , x > 0 y b > 0
+genera un sistema de cualquier orden (I-A)x = b donde Aij in <0,1>  , L < x < U y b > 0
 """
 
 
