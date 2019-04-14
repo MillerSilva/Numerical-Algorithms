@@ -1,3 +1,8 @@
+"""
+genera un sistema (I-A)x = b donde Aij in <0,1>  , x > 0 y b > 0
+"""
+
+
 import numpy as np
 import random as rdm
 
