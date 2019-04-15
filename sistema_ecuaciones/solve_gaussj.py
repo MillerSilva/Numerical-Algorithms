@@ -25,8 +25,8 @@ def gaussj(A):
 def solve_gaussj(A, b):
     
     if sl.det(A) != 0:
-        A0 = gaussj(A) # A0 = A^{-1}
-        return np.dot(A0, b)
+        invA = gaussj(A) 
+        return np.dot(invA, b)
     else:
         print("no existe solucion.")
         return np.zeros_like(A)
