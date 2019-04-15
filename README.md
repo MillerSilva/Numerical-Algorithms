@@ -2,14 +2,16 @@
 
 Temas desarrollados y en desarrollo en este repositorio:
 
-* Series de Neumann
-* Refinamiento Iterativo
-* Solución de ecuaciones mediante metodos iterativos
-	* Método de Richardson
-	* Método de Jacobi
-	* Método de Gauss-Seidel
-	* Método de SOR
-	* Aceleración de Chebyshev
+* Sistema de ecuaciones lineales
+	* Series de Neumann
+	* Refinamiento Iterativo
+	* Solución de ecuaciones mediante metodos iterativos
+		* Método de Richardson
+		* Método de Jacobi
+		* Método de Gauss-Seidel
+		* Método de SOR
+		* Aceleración de Chebyshev
+* solución de sistema no lineales
 * Problemas de valores propios de una matriz
 * Aproximación de funciones
 * Diferenciación e integración Numérica
