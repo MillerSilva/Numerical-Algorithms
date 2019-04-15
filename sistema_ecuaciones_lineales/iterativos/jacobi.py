@@ -1,3 +1,4 @@
+# Calcula la solucion del sistema Ax= b, mediante la iteraciones de jacobi 
 import numpy as np
 
 def isdiag_domin(A):
