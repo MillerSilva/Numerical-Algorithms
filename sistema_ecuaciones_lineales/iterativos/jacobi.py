@@ -12,11 +12,12 @@ def isdiag_domin(A):
 
 def jacobi(A, b, x0, MAX_ITERATIONS=1000):
     if isdiag_domin(A):
-        Q = np.diag(np.diag(A)**(-1))
+        nrow = np.shape(A)[0]
+        Q = np.diag(np.diag(A))
+        x = np.zeros_like(x0)
         for k in range(MAX_ITERATIONS):
             b0 = np.dot(Q-A, x0)+b
-            x = sl.solve(Q, b0)
-            x0 = x
+            x0 = np.array([b0[k]/Q[k,k] for k in range(nrow)]) 
         return x
 
     else:
