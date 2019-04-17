@@ -44,6 +44,10 @@ Que puedes descargar en la libreria virtual [ZLibrary](https://b-ok.cc/)
 
 Tambien puedes encontrar información acerca de diferentes topicos (algebra, ode, pde, análisis, real y otros), en [MIT OpenCourseWare](https://ocw.mit.edu/index.htm).
 
-Además puedes encontrar videos utiles del **NPTEL** acerca de *Análisis Numérico* [acá](https://www.youtube.com/playlist?list=PLoFGL7wppr4tdWBUS-wj-J1AHIVz21fTB) 
+## Tutoriales
 
+* Tutoriales de **Análisis Numérico** puedes verlos [aquí](https://www.youtube.com/playlist?list=PLoFGL7wppr4tdWBUS-wj-J1AHIVz21fTB)
+* Tutoriales de para aprender **Python** puedes verlos [aquí](https://www.youtube.com/channel/UCh9nVJoWXmFb7sLApWGcLPQ/playlists)
+
+* Tutoriales para arender a usar las librearias **Multiprocess, Multithread** puedes verlos [aquí](https://www.youtube.com/watch?v=RR4SoktDQAw&list=PL5tcWHG-UPH3SX16DI6EP1FlEibgxkg_6)
 
