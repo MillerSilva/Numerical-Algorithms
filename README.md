@@ -3,15 +3,22 @@
 Temas desarrollados y en desarrollo en este repositorio:
 
 * Sistema de ecuaciones lineales
+	* Solución de sistema de ecuaciones lineales mediante métodos directos
+		* Transformación de Gauss- Jordan
+		* Factorizacion LU
+		* Eliminacion gaussiana con y sin pivoteo
 	* Series de Neumann
 	* Refinamiento Iterativo
-	* Solución de ecuaciones mediante metodos iterativos
+	* Solución de sistema de ecuaciones lineales mediante métodos iterativos
 		* Método de Richardson
 		* Método de Jacobi
 		* Método de Gauss-Seidel
 		* Método de SOR
 		* Aceleración de Chebyshev
 * solución de sistema no lineales
+	* Método de la bisección 
+	* Método de Newton
+	* Método de la Secante
 * Problemas de valores propios de una matriz
 * Aproximación de funciones
 * Diferenciación e integración Numérica
