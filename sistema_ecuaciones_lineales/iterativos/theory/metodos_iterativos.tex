@@ -1,0 +1,94 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\title{Métodos Iterativos para la Solución de Sistema de Ecuaciones}
+%% new enviroments
+\newtheorem{mydef}{Definición}[section]
+\newtheorem{mytheo}{Teorema}[section]
+\newtheorem{mycorol}{Corolario}[mytheo]
+% new commands
+\newcommand{\re}{\mathbb{R}}
+\newcommand{\ds}{\displaystyle}
+
+\begin{document}
+\maketitle
+
+\section{Conceptos Previos}
+\begin{mydef}[Radio Espectral]
+	Sea $A\in\re^{n\times n}$, el radio espectral de $A$ es denotado por $\rho (A)	$ y se define como:
+	$$\rho (A) = \max\left\{\vert\lambda\vert /p_{A}(\lambda) = 0\right\}$$\end{mydef}
+
+\begin{mydef}[Diagonalmente dominante]
+	Sea $A\in\re^{n\times n}$, $A$ es diagonamlmente dominante si:
+		$$\vert a_{ij}\vert > \sum_{j=1, j\neq i}^{n}\vert a_{ij}\vert,\quad i=1-n$$
+\end{mydef}
+
+\begin{mytheo}
+	La  función llamada radio espectral satisface la ecución:
+	$$\rho (A) = \inf_{\Vert .\Vert}\Vert A\Vert$$
+	
+	En la cual	el infimo se toma sobre todas las normas matriciales subordinadas.
+\end{mytheo}
+
+\begin{mytheo}
+	Sea las iteraciones $x^{(k)}\in\re^{n\times 1}$ dadas por
+	$$x^{(k)} = Gx^{(k-1)}+c$$
+	donde $c\in \re^{n\times 1}, G\in\re^{n\times n}$.Dichas iteraciones convergen a $(I-G)^{-1}c$, paar cualquier valor para $x^{(0)}$ si y solo si $\rho (G) < 1$.
+\end{mytheo}
+
+\textbf{Prueba}\\
+\begin{description}
+	\item[$(\Leftrightarrow)$]
+		\begin{align*}
+			x^{(k)} &= Gx^{(k-1)} +c\\
+	 			&= G\left(Gx^{(k-2)}+c\right)+c\\
+	 			&\vdots\\
+	 			&= G^{k}x^{(0)} + \ds\sum_{i=0}^{k-1}G^{i}c
+		\end{align*}
+		Como $\rho (G) = \inf_{\Vert .\Vert}\Vert G\Vert < 1$
+		$\Rightarrow\exists\Vert .\Vert_{\star}/\Vert G\Vert_{\star} <1$
+		$$\Rightarrow\lim_{k\rightarrow\infty}\Vert G\Vert_{\star}^{k} = 0$$
+		$$\Rightarrow\lim_{k\rightarrow\infty}\Vert G^{k}x^{(0)}\Vert =0$$
+		$\therefore G^{k}x^{(0)}$ es una sucesión convergente a $0$
+		De igual modo como $\Vert G\Vert_{\star} < 1$, por la serie de Neuman
+		$$(I-G)^{-1} = \sum_{k=0}^{\infty}G^{k}$$
+		Por lo tanto la serie $S_{m} = \ds\sum_{i=0}^{m}G^{i}c$ converge a $(I-G)^{-1}c$
+		Por lo que $x^{(k)}$ converge, finalmente
+		$$\lim_{k\rightarrow\infty}x^{(k)} = (I-G)^{-1}c$$
+	\item[$(\Rightarrow)$] 
+\end{description}
+
+\begin{mycorol}
+	La iteraciones
+	\begin{equation}\label{iter}
+		Qx^{(k)} = (Q-A)x^{(k)} + b
+	\end{equation}
+	converge a la solución del sistema $Ax=b$, para cualquier $x^{(0)}$ con la condición $\rho (I-Q^{-1}A) < 1$.
+\end{mycorol} 
+
+\textbf{Prueba}\\
+Podemos expresar (\ref{iter}) como
+$$x^{(k)} = (I-Q^{-1}A)x^{(k-1)} +Q^{-1}b$$
+Como $\rho (G) < 1$, entonces $x^{(k)}$ converge a $(I-G)^{-1}c$ con $G=I-Q^{-1}A$ y $c = Q^{-1}b$.Es decir:
+\begin{align*}
+	x^{(k)} \rightarrow (I-G)^{-1}c &= \left(I-(I-Q^{-1}A)\right)^{-1}\left(Q^{-1}b\right)\\
+			&= (Q^{-1}A)^{-1}(Q^{-1}b)\\
+			&= (A^{-1}Q)(Q^{-1}b)\\
+			&= A^{-1}b = x
+\end{align*}
+Por los tanto $x^{k}$ converge a la solución del sistema $Ax=b$.
+ 
+
+
+\section{Métodos Iterativos}
+\subsection{Método de Richardson}
+\subsection{Método de Jacobi}
+\subsection{Método de Gauss-Seidel}
+\subsection{Método de SOR}
+\end{document}
