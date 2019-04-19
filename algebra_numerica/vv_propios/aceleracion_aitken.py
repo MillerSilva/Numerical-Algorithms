@@ -25,7 +25,8 @@ def aitken(r):
         r2 = next(r)
         yield (r0*r2-r1**2)/(r2-2*r1+r0)
         
-def convergencia_aitken(r, MAX_ITERATIONS=1000, ERROR=1e-3):
+# Implementar un funcion que genera un iterador solo si el proximo no esta muy proximo a el (estancamiento, VER NOTA)
+def convergencia_aitken(r, MAX_ITERATIONS=1000):
     s = aitken(r)
     n = 1
     s1 = next(s)
