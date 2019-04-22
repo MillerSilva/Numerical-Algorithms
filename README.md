@@ -21,6 +21,10 @@ Temas desarrollados y en desarrollo en este repositorio:
 	* Método de la Secante
 * Problemas de valores propios de una matriz
 * Aproximación de funciones
+	* Forma de Newton del Polinomio de Interpolación
+	* Diferencias Divididas
+	* Interpolación de Hermite
+	* Interpolación por Splines
 * Diferenciación e integración Numérica
 
 
