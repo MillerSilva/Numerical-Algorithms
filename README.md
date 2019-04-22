@@ -20,6 +20,8 @@ Temas desarrollados y en desarrollo en este repositorio:
 	* Método de Newton
 	* Método de la Secante
 * Problemas de valores propios de una matriz
+	* Metodo de Potencia
+	* Metodo de potencia inversa
 * Aproximación de funciones
 	* Forma de Newton del Polinomio de Interpolación
 	* Diferencias Divididas
