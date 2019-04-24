@@ -30,6 +30,8 @@ def solve_taylor(x0, t0, h = 0.01, MAX_ITERATIONS=200):
 		t = np.append(t, t0)
 		
 	plt.plot(t, x, label="Solucion de la edo")
+	plt.xlabel('t')
+	plt.ylabel('x(t)')	
 	plt.grid()
 	plt.legend()
 	plt.show()
