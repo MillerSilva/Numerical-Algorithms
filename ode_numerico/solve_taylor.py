@@ -1,7 +1,7 @@
 # Calcula la solucion de la siguiente ecuacion diferencial por el metodo de la serie de taylor.
 #
 # x' = cos(t) - sin(x) + t**2
-# x(-1) = 3
+# x(t0) = x0
 #
 # NOTA(notacion):
 #	xk : derivada k-esima de x
