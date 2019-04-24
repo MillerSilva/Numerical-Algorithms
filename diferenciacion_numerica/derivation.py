@@ -1,5 +1,4 @@
-# Implementa el calculo de la primera derivada de una funcion de clase C2
-# y cuya tercer derivada exista
+# Implementa el calculo de la 1era, 2da y 3ra  derivada de una funcion.
 
 
 def first_deriv(x0, f, h=1, MAX_ITERATIONS=100):
